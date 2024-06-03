@@ -1,0 +1,38 @@
+GET http://localhost:3000/api/categorias
+###
+
+POST http://localhost:3000/api/auth
+Content-Type: application/json
+
+{
+    "email": "eduardo@uv.mx",
+    "password":"eduardito"
+}
+
+###
+
+GET http://localhost:3000/api/peliculas
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiZ3ZlcmFAdXYubXgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJHdWlsbGVybW8gVmVyYSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmFkb3IiLCJpc3MiOiJTZXJ2aWRvckZlaUpXVCIsImF1ZCI6IkNsaWVudGVzRmVpSldUIiwiaWF0IjoxNzE2MjMxOTMwLCJleHAiOjE3MTYyMzIxNzB9.NWDe6sMoQtAF-YNYj4jz-9PWGdFDNB_WplBw7sJriGs
+
+###
+POST http://localhost:3000/api/usuarios
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYXJjb3NAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiRGFuaWVsIEdhcmNpYSBBcmNvcyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmFkb3IiLCJpc3MiOiJTZXJ2aWRvckZlaUpXVCIsImF1ZCI6IkNsaWVudGVzRmVpSldUIiwiaWF0IjoxNzE2Njc0MzEzLCJleHAiOjE3MTY2NzQ1NTN9.4tcdi_dw1axDzGYSgwoo507KUwzCbCYoBcgJf_4CiLE
+
+{
+  "rol": "Usuario",
+  "email": "usuarioprueba@gmail.com",
+  "password": "usuarioTesting",
+  "nombre": "Luis Miguel Hernandez"
+}
+
+### 
+
+POST http://localhost:3000/api/auth
+Content-Type: application/json
+
+{
+    "email": "eduardo@gmail.com",
+  "password": "egdgarcia"
+}

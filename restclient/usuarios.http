@@ -1,0 +1,34 @@
+GET http://localhost:3000/api/usuarios
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiZWR1YXJkb0B1di5teCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6IkVkdWFyZG8gR2FyY2lhIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYWRvciIsImlzcyI6IlNlcnZpZG9yRmVpSldUIiwiYXVkIjoiQ2xpZW50ZXNGZWlKV1QiLCJpYXQiOjE3MTczNzQxNzIsImV4cCI6MTcxNzM3NDQxMn0.yMG7p6oYyYx3o6aqb1Fi7n9edmjPdjnLdgUEgE1Zpag
+
+
+
+###
+
+GET http://localhost:3000/api/usuarios/edu@gmail.com
+
+###
+
+POST http://localhost:3000/api/usuarios
+Content-Type: application/json
+
+{
+    "username": "Usuario de prueba",
+    "password": "eduardito",
+    "nombre": "Un nuevo usuario eduardo",
+    "rol": "Administrador",
+    "email": "edu@gmail.com"
+}
+
+###
+
+PUT http://localhost:3000/api/usuarios/edu@gmail.com
+Content-Type: application/json
+
+{
+    "nombre": "Eduardo Garcia",
+    "rol": "Usuario"
+}
+
+###
+DELETE http://localhost:3000/api/usuarios/edu@gmail.com
